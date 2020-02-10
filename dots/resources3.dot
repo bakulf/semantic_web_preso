@@ -1,8 +1,10 @@
 digraph G {
     rankdir=LR;
+    node [fontcolor=blue]
+    edge [color=aquamarine4, fontcolor=red ]
     A [ label = "https://tmancinelli.github.io/biflow_website/person?id=2", shape=box ]
     O [ label = "https://tmancinelli.github.io/biflow_website/work?id=1", shape=box ]
-    A -> O [ label = "http://tmancinelli.github.io/biflow/0.1#author" style=bold, color=red]
+    A -> O [ label = "http://tmancinelli.github.io/biflow/0.1#author" style=bold]
     A -> N [ label = "http://tmancinelli.github.io/biflow/0.1#has_name"]
     O -> T [ label = "http://tmancinelli.github.io/biflow/0.1#has_title" ]
     T [ label = "\"Liber\"" ]
@@ -10,7 +12,7 @@ digraph G {
 
     A2 [ label = "https://tmancinelli.github.io/biflow_website/person?id=82", shape=box ]
     O2 [ label = "https://tmancinelli.github.io/biflow_website/work?id=18", shape=box ]
-    A2 -> O2 [ label = "http://tmancinelli.github.io/biflow/0.1#author" style=bold, color=red]
+    A2 -> O2 [ label = "http://tmancinelli.github.io/biflow/0.1#author" style=bold]
     A2 -> N2 [ label = "http://tmancinelli.github.io/biflow/0.1#has_name"]
     O2 -> T2 [ label = "http://tmancinelli.github.io/biflow/0.1#has_title" ]
     T2 [ label = "\"Régime du corps, Régime du corps\"" ]

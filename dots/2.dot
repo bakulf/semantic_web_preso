@@ -1,5 +1,7 @@
 digraph G {
     rankdir=LR;
+    node [fontcolor=blue]
+    edge [color=aquamarine4, fontcolor=red ]
     A [ label = "Angela da Foligno" ]
     O [ label = "Liber" ]
     G1 [ label = "Letteratura religiosa"]

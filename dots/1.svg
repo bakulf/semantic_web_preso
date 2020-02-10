@@ -13,20 +13,20 @@
 <g id="node1" class="node">
 <title>A</title>
 <ellipse fill="none" stroke="#000000" cx="76.6932" cy="-18" rx="76.8869" ry="18"/>
-<text text-anchor="middle" x="76.6932" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">Angela da Foligno</text>
+<text text-anchor="middle" x="76.6932" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">Angela da Foligno</text>
 </g>
 <!-- O -->
 <g id="node2" class="node">
 <title>O</title>
 <ellipse fill="none" stroke="#000000" cx="280.2837" cy="-18" rx="29.795" ry="18"/>
-<text text-anchor="middle" x="280.2837" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">Liber</text>
+<text text-anchor="middle" x="280.2837" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">Liber</text>
 </g>
 <!-- A&#45;&gt;O -->
 <g id="edge1" class="edge">
 <title>A&#45;&gt;O</title>
-<path fill="none" stroke="#000000" d="M153.662,-18C183.1221,-18 215.5366,-18 240.1939,-18"/>
-<polygon fill="#000000" stroke="#000000" points="240.2553,-21.5001 250.2552,-18 240.2552,-14.5001 240.2553,-21.5001"/>
-<text text-anchor="middle" x="201.8864" y="-21.8" font-family="Times,serif" font-size="14.00" fill="#000000">è autrice di</text>
+<path fill="none" stroke="#458b74" d="M153.662,-18C183.1221,-18 215.5366,-18 240.1939,-18"/>
+<polygon fill="#458b74" stroke="#458b74" points="240.2553,-21.5001 250.2552,-18 240.2552,-14.5001 240.2553,-21.5001"/>
+<text text-anchor="middle" x="201.8864" y="-21.8" font-family="Times,serif" font-size="14.00" fill="#ff0000">è autrice di</text>
 </g>
 </g>
 </svg>

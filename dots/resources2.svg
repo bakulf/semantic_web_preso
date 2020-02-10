@@ -13,85 +13,85 @@
 <g id="node1" class="node">
 <title>A</title>
 <polygon fill="none" stroke="#000000" points="326,-82 0,-82 0,-46 326,-46 326,-82"/>
-<text text-anchor="middle" x="163" y="-60.3" font-family="Times,serif" font-size="14.00" fill="#000000">https://tmancinelli.github.io/biflow_website/person?id=2</text>
+<text text-anchor="middle" x="163" y="-60.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">https://tmancinelli.github.io/biflow_website/person?id=2</text>
 </g>
 <!-- O -->
 <g id="node2" class="node">
 <title>O</title>
 <polygon fill="none" stroke="#000000" points="741,-117 423,-117 423,-81 741,-81 741,-117"/>
-<text text-anchor="middle" x="582" y="-95.3" font-family="Times,serif" font-size="14.00" fill="#000000">https://tmancinelli.github.io/biflow_website/work?id=1</text>
+<text text-anchor="middle" x="582" y="-95.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">https://tmancinelli.github.io/biflow_website/work?id=1</text>
 </g>
 <!-- A&#45;&gt;O -->
 <g id="edge1" class="edge">
 <title>A&#45;&gt;O</title>
-<path fill="none" stroke="#000000" d="M326.1961,-77.6321C354.5616,-80.0016 384.1192,-82.4706 412.6451,-84.8534"/>
-<polygon fill="#000000" stroke="#000000" points="412.4317,-88.3477 422.6884,-85.6923 413.0145,-81.372 412.4317,-88.3477"/>
-<text text-anchor="middle" x="374.5" y="-86.8" font-family="Times,serif" font-size="14.00" fill="#000000">è autrice di</text>
+<path fill="none" stroke="#458b74" d="M326.1961,-77.6321C354.5616,-80.0016 384.1192,-82.4706 412.6451,-84.8534"/>
+<polygon fill="#458b74" stroke="#458b74" points="412.4317,-88.3477 422.6884,-85.6923 413.0145,-81.372 412.4317,-88.3477"/>
+<text text-anchor="middle" x="374.5" y="-86.8" font-family="Times,serif" font-size="14.00" fill="#ff0000">è autrice di</text>
 </g>
 <!-- N -->
 <g id="node3" class="node">
 <title>N</title>
 <ellipse fill="none" stroke="#000000" cx="582" cy="-45" rx="86.3847" ry="18"/>
-<text text-anchor="middle" x="582" y="-41.3" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;Angela Da Foligno&quot;</text>
+<text text-anchor="middle" x="582" y="-41.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">&quot;Angela Da Foligno&quot;</text>
 </g>
 <!-- A&#45;&gt;N -->
 <g id="edge2" class="edge">
 <title>A&#45;&gt;N</title>
-<path fill="none" stroke="#000000" d="M326.2837,-54.8478C332.2635,-54.5543 338.1841,-54.2706 344,-54 390.9413,-51.8159 443.1095,-49.7973 486.6127,-48.2277"/>
-<polygon fill="#000000" stroke="#000000" points="486.7462,-51.7252 496.6144,-47.8692 486.4954,-44.7297 486.7462,-51.7252"/>
-<text text-anchor="middle" x="374.5" y="-57.8" font-family="Times,serif" font-size="14.00" fill="#000000">ha nome</text>
+<path fill="none" stroke="#458b74" d="M326.2837,-54.8478C332.2635,-54.5543 338.1841,-54.2706 344,-54 390.9413,-51.8159 443.1095,-49.7973 486.6127,-48.2277"/>
+<polygon fill="#458b74" stroke="#458b74" points="486.7462,-51.7252 496.6144,-47.8692 486.4954,-44.7297 486.7462,-51.7252"/>
+<text text-anchor="middle" x="374.5" y="-57.8" font-family="Times,serif" font-size="14.00" fill="#ff0000">ha nome</text>
 </g>
 <!-- T -->
 <g id="node4" class="node">
 <title>T</title>
 <ellipse fill="none" stroke="#000000" cx="932.6909" cy="-180" rx="37.8943" ry="18"/>
-<text text-anchor="middle" x="932.6909" y="-176.3" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;Liber&quot;</text>
+<text text-anchor="middle" x="932.6909" y="-176.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">&quot;Liber&quot;</text>
 </g>
 <!-- O&#45;&gt;T -->
 <g id="edge3" class="edge">
 <title>O&#45;&gt;T</title>
-<path fill="none" stroke="#000000" d="M660.2654,-117.0772C730.7261,-133.3517 831.7265,-156.68 888.8808,-169.8811"/>
-<polygon fill="#000000" stroke="#000000" points="888.1542,-173.3053 898.6854,-172.1457 889.7296,-166.4849 888.1542,-173.3053"/>
-<text text-anchor="middle" x="785.5" y="-154.8" font-family="Times,serif" font-size="14.00" fill="#000000">ha titolo</text>
+<path fill="none" stroke="#458b74" d="M660.2654,-117.0772C730.7261,-133.3517 831.7265,-156.68 888.8808,-169.8811"/>
+<polygon fill="#458b74" stroke="#458b74" points="888.1542,-173.3053 898.6854,-172.1457 889.7296,-166.4849 888.1542,-173.3053"/>
+<text text-anchor="middle" x="785.5" y="-154.8" font-family="Times,serif" font-size="14.00" fill="#ff0000">ha titolo</text>
 </g>
 <!-- G1 -->
 <g id="node5" class="node">
 <title>G1</title>
 <ellipse fill="none" stroke="#000000" cx="932.6909" cy="-126" rx="89.8845" ry="18"/>
-<text text-anchor="middle" x="932.6909" y="-122.3" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;Letteratura religiosa&quot;</text>
+<text text-anchor="middle" x="932.6909" y="-122.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">&quot;Letteratura religiosa&quot;</text>
 </g>
 <!-- O&#45;&gt;G1 -->
 <g id="edge4" class="edge">
 <title>O&#45;&gt;G1</title>
-<path fill="none" stroke="#000000" d="M741.1841,-111.2557C774.5358,-113.8235 808.6741,-116.4518 838.7173,-118.7649"/>
-<polygon fill="#000000" stroke="#000000" points="838.5026,-122.2586 848.7418,-119.5367 839.04,-115.2793 838.5026,-122.2586"/>
-<text text-anchor="middle" x="785.5" y="-119.8" font-family="Times,serif" font-size="14.00" fill="#000000">ha genere</text>
+<path fill="none" stroke="#458b74" d="M741.1841,-111.2557C774.5358,-113.8235 808.6741,-116.4518 838.7173,-118.7649"/>
+<polygon fill="#458b74" stroke="#458b74" points="838.5026,-122.2586 848.7418,-119.5367 839.04,-115.2793 838.5026,-122.2586"/>
+<text text-anchor="middle" x="785.5" y="-119.8" font-family="Times,serif" font-size="14.00" fill="#ff0000">ha genere</text>
 </g>
 <!-- G2 -->
 <g id="node6" class="node">
 <title>G2</title>
 <ellipse fill="none" stroke="#000000" cx="932.6909" cy="-72" rx="102.8821" ry="18"/>
-<text text-anchor="middle" x="932.6909" y="-68.3" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;Autobiografia spirituale&quot;</text>
+<text text-anchor="middle" x="932.6909" y="-68.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">&quot;Autobiografia spirituale&quot;</text>
 </g>
 <!-- O&#45;&gt;G2 -->
 <g id="edge5" class="edge">
 <title>O&#45;&gt;G2</title>
-<path fill="none" stroke="#000000" d="M741.1841,-86.7443C770.859,-84.4596 801.1566,-82.1269 828.6383,-80.0111"/>
-<polygon fill="#000000" stroke="#000000" points="828.9275,-83.4993 838.6293,-79.2419 828.3901,-76.5199 828.9275,-83.4993"/>
-<text text-anchor="middle" x="785.5" y="-87.8" font-family="Times,serif" font-size="14.00" fill="#000000">ha genere</text>
+<path fill="none" stroke="#458b74" d="M741.1841,-86.7443C770.859,-84.4596 801.1566,-82.1269 828.6383,-80.0111"/>
+<polygon fill="#458b74" stroke="#458b74" points="828.9275,-83.4993 838.6293,-79.2419 828.3901,-76.5199 828.9275,-83.4993"/>
+<text text-anchor="middle" x="785.5" y="-87.8" font-family="Times,serif" font-size="14.00" fill="#ff0000">ha genere</text>
 </g>
 <!-- G3 -->
 <g id="node7" class="node">
 <title>G3</title>
 <ellipse fill="none" stroke="#000000" cx="932.6909" cy="-18" rx="45.4919" ry="18"/>
-<text text-anchor="middle" x="932.6909" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">&quot;Mistica&quot;</text>
+<text text-anchor="middle" x="932.6909" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">&quot;Mistica&quot;</text>
 </g>
 <!-- O&#45;&gt;G3 -->
 <g id="edge6" class="edge">
 <title>O&#45;&gt;G3</title>
-<path fill="none" stroke="#000000" d="M710.9579,-80.9569C721.232,-78.3545 731.3573,-75.3855 741,-72 749.6349,-68.9683 750.493,-65.3741 759,-62 798.7399,-46.2378 845.8702,-34.7183 881.0024,-27.4289"/>
-<polygon fill="#000000" stroke="#000000" points="881.9322,-30.8117 891.037,-25.3939 880.5408,-23.9514 881.9322,-30.8117"/>
-<text text-anchor="middle" x="785.5" y="-65.8" font-family="Times,serif" font-size="14.00" fill="#000000">ha genere</text>
+<path fill="none" stroke="#458b74" d="M710.9579,-80.9569C721.232,-78.3545 731.3573,-75.3855 741,-72 749.6349,-68.9683 750.493,-65.3741 759,-62 798.7399,-46.2378 845.8702,-34.7183 881.0024,-27.4289"/>
+<polygon fill="#458b74" stroke="#458b74" points="881.9322,-30.8117 891.037,-25.3939 880.5408,-23.9514 881.9322,-30.8117"/>
+<text text-anchor="middle" x="785.5" y="-65.8" font-family="Times,serif" font-size="14.00" fill="#ff0000">ha genere</text>
 </g>
 </g>
 </svg>
