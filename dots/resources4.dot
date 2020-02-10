@@ -1,0 +1,12 @@
+digraph G {
+    rankdir=LR;
+    node [fontcolor=blue]
+    edge [color=aquamarine4, fontcolor=red ]
+    A [ label = "http://tmancinelli.github.io/biflow/0.1#author", shape=box ]
+    B [ label = "rdf:Property", shape=box]
+    A -> B [ label = "rdf:type"]
+    A -> C [ label = "rdfs:domain"]
+    C [ label = "http://tmancinelli.github.io/biflow/0.1#Person", shape=box]
+    A -> D [ label = "rdfs:range", shape=box]
+    D [ label = "http://tmancinelli.github.io/biflow/0.1#Work", shape=box]
+}

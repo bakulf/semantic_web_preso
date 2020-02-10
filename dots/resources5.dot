@@ -1,0 +1,13 @@
+digraph G {
+    rankdir=LR;
+    node [fontcolor=blue]
+    edge [color=aquamarine4, fontcolor=red ]
+    A [ label = "http://tmancinelli.github.io/biflow/0.1#Person", shape=box ]
+    B [ label = "rdfs:Class", shape=box]
+    A -> B [ label = "rdf:type"]
+    A -> C [ label = "rdfs:subClassOf"]
+    C [ label = "http://erlangen-crm.org/current/E39_Author", shape=box]
+    A -> D [ label = "rdfs:label"]
+    D [ label = "\"Person\""]
+}
+
