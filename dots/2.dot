@@ -1,0 +1,12 @@
+digraph G {
+    rankdir=LR;
+    A [ label = "Angela da Foligno" ]
+    O [ label = "Liber" ]
+    G1 [ label = "Letteratura religiosa"]
+    G2 [ label = "Autobiografia spirituale"]
+    G3 [ label = "Mistica"]
+    A -> O [ label = "è autrice di" ]
+    O -> G1 [ label = "ha genere" ]
+    O -> G2 [ label = "ha genere" ]
+    O -> G3 [ label = "ha genere" ]
+}

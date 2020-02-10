@@ -124,22 +124,76 @@ Come possono le macchine comprendere il Web?
 ## Livello 2
 ### Tecnologie Semantiche
 
-* Rappresentazione della conoscenza
 * RDF: Resource Description Framework
+* Rappresentazione della conoscenza
+* TODO: cos'e'? specifica...
 </section>
 
 <section data-markdown>
-## RDF
+## RDF - passaggio 1
 
-* Dimentichiamoci dell'XML per un momento...
-* Elemento minimo: la tripletta: Soggetto - Predicato - Oggetto
-* "Documenti'Damore" "ha autore" "Francesco Da Barberino"
+* Elemento minimo: la tripletta
+* Soggetto - Predicato - Oggetto
+* Il predicato e' l'arco che unisce i due nodi
+
+![RDF](dots/1.svg "RDF 1")
 </section>
 
 <section data-markdown>
-## RDF
+## RDF - passaggio 2
 
-* "Documenti'Damore", "ha autore" e "Francesco Da Barberino" sono risorse.
+* Dalla tripletta al grafo
+* RDF definite un grafo orientato
+
+![RDF](dots/2.svg "RDF 2")
+</section>
+
+<section data-markdown>
+## RDF - passaggio 3
+
+* I nodi sono risorse (URI) o tipi primitivi
+* Le risorse non hanno contenuto in sé
+* Assumono valore tramite le proprietà ad esse collegate
+
+![RDF](dots/resources.svg "RDF resources")
+</section>
+
+<section data-markdown>
+## RDF - passaggio 4
+![RDF](dots/resources2.svg "RDF resources 2")
+</section>
+
+<section data-markdown>
+## RDF - passaggio 5
+
+* Le proprietà sono anch'esse risorse
+* Possono essere "condivise"
+* Proprietà e classi definiscono modelli per rappresentare la conoscenza
+
+![RDF](dots/resources3.svg "RDF resources 3")
+</section>
+
+<section data-markdown>
+## RDF - passaggio 6
+
+* Tramite l'RDF è possibile definire le proprietà di un dominio
+* Creazione di un modello per la rappresentazione della conoscenza
+</section>
+
+<section>
+  <h2>BiFlow</h2>
+  <div style="overflow:auto; height: 500px">
+    <img id="biflow" src="imgs/biflow.png" style="max-height: none; max-width: none;"/>
+  </div>
+  <button onclick="zoom(1)">In</button>
+  <button onclick="zoom(-1)">Out</button>
+  <script>
+function zoom(v) {
+  const img = document.getElementById("biflow");
+  const width = img.clientWidth;
+  img.style.width = (width + (100*v)) + "px"
+}
+  </script>
 </section>
 
       </div>
@@ -148,9 +202,6 @@ Come possono le macchine comprendere il Web?
     <script src="js/reveal.js"></script>
 
     <script>
-      // More info about config & dependencies:
-      // - https://github.com/hakimel/reveal.js#configuration
-      // - https://github.com/hakimel/reveal.js#dependencies
       Reveal.initialize({
         hash: true,
         dependencies: [
