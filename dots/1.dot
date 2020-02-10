@@ -1,0 +1,6 @@
+digraph G {
+    rankdir=LR;
+    A [ label = "Angela da Foligno" ]
+    O [ label = "Liber" ]
+    A -> O [ label = "è autrice di" ]
+}
