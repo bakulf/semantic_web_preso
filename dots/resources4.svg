@@ -13,46 +13,46 @@
 <g id="node1" class="node">
 <title>A</title>
 <polygon fill="none" stroke="#000000" points="264,-90 0,-90 0,-54 264,-54 264,-90"/>
-<text text-anchor="middle" x="132" y="-68.3" font-family="Times,serif" font-size="14.00" fill="#000000">http://tmancinelli.github.io/biflow/0.1#author</text>
+<text text-anchor="middle" x="132" y="-68.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">http://tmancinelli.github.io/biflow/0.1#author</text>
 </g>
 <!-- B -->
 <g id="node2" class="node">
 <title>B</title>
 <polygon fill="none" stroke="#000000" points="541.5,-144 458.5,-144 458.5,-108 541.5,-108 541.5,-144"/>
-<text text-anchor="middle" x="500" y="-122.3" font-family="Times,serif" font-size="14.00" fill="#000000">rdf:Property</text>
+<text text-anchor="middle" x="500" y="-122.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">rdf:Property</text>
 </g>
 <!-- A&#45;&gt;B -->
 <g id="edge1" class="edge">
 <title>A&#45;&gt;B</title>
-<path fill="none" stroke="#000000" d="M254.7944,-90.0187C320.6927,-99.6886 398.4116,-111.093 448.4056,-118.4291"/>
-<polygon fill="#000000" stroke="#000000" points="447.9285,-121.8965 458.3307,-119.8855 448.9448,-114.9706 447.9285,-121.8965"/>
-<text text-anchor="middle" x="315.5" y="-106.8" font-family="Times,serif" font-size="14.00" fill="#000000">rdf:type</text>
+<path fill="none" stroke="#458b74" d="M254.7944,-90.0187C320.6927,-99.6886 398.4116,-111.093 448.4056,-118.4291"/>
+<polygon fill="#458b74" stroke="#458b74" points="447.9285,-121.8965 458.3307,-119.8855 448.9448,-114.9706 447.9285,-121.8965"/>
+<text text-anchor="middle" x="315.5" y="-106.8" font-family="Times,serif" font-size="14.00" fill="#ff0000">rdf:type</text>
 </g>
 <!-- C -->
 <g id="node3" class="node">
 <title>C</title>
 <polygon fill="none" stroke="#000000" points="633,-90 367,-90 367,-54 633,-54 633,-90"/>
-<text text-anchor="middle" x="500" y="-68.3" font-family="Times,serif" font-size="14.00" fill="#000000">http://tmancinelli.github.io/biflow/0.1#Person</text>
+<text text-anchor="middle" x="500" y="-68.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">http://tmancinelli.github.io/biflow/0.1#Person</text>
 </g>
 <!-- A&#45;&gt;C -->
 <g id="edge2" class="edge">
 <title>A&#45;&gt;C</title>
-<path fill="none" stroke="#000000" d="M264.0767,-72C294.081,-72 326.0915,-72 356.5431,-72"/>
-<polygon fill="#000000" stroke="#000000" points="356.8052,-75.5001 366.8052,-72 356.8052,-68.5001 356.8052,-75.5001"/>
-<text text-anchor="middle" x="315.5" y="-75.8" font-family="Times,serif" font-size="14.00" fill="#000000">rdfs:domain</text>
+<path fill="none" stroke="#458b74" d="M264.0767,-72C294.081,-72 326.0915,-72 356.5431,-72"/>
+<polygon fill="#458b74" stroke="#458b74" points="356.8052,-75.5001 366.8052,-72 356.8052,-68.5001 356.8052,-75.5001"/>
+<text text-anchor="middle" x="315.5" y="-75.8" font-family="Times,serif" font-size="14.00" fill="#ff0000">rdfs:domain</text>
 </g>
 <!-- D -->
 <g id="node4" class="node">
 <title>D</title>
 <polygon fill="none" stroke="#000000" points="630.5,-36 369.5,-36 369.5,0 630.5,0 630.5,-36"/>
-<text text-anchor="middle" x="500" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">http://tmancinelli.github.io/biflow/0.1#Work</text>
+<text text-anchor="middle" x="500" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#0000ff">http://tmancinelli.github.io/biflow/0.1#Work</text>
 </g>
 <!-- A&#45;&gt;D -->
 <g id="edge3" class="edge">
 <title>A&#45;&gt;D</title>
-<path fill="none" stroke="#000000" d="M254.7944,-53.9813C290.808,-48.6967 330.3519,-42.894 366.9716,-37.5205"/>
-<polygon fill="#000000" stroke="#000000" points="367.8314,-40.9319 377.2173,-36.017 366.8151,-34.006 367.8314,-40.9319"/>
-<text text-anchor="middle" x="315.5" y="-52.8" font-family="Times,serif" font-size="14.00" fill="#000000">rdfs:range</text>
+<path fill="none" stroke="#458b74" d="M254.7944,-53.9813C290.808,-48.6967 330.3519,-42.894 366.9716,-37.5205"/>
+<polygon fill="#458b74" stroke="#458b74" points="367.8314,-40.9319 377.2173,-36.017 366.8151,-34.006 367.8314,-40.9319"/>
+<text text-anchor="middle" x="315.5" y="-52.8" font-family="Times,serif" font-size="14.00" fill="#ff0000">rdfs:range</text>
 </g>
 </g>
 </svg>

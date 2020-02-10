@@ -1,8 +1,10 @@
 digraph G {
     rankdir=LR;
-    A [ label = "https://tmancinelli.github.io/biflow_website/person?id=2", shape=box ]
-    O [ label = "https://tmancinelli.github.io/biflow_website/work?id=1", shape=box ]
-    A -> O [ label = "è autrice di" ]
-    A -> N [ label = "ha nome" ]
-    N [ label = "\"Angela Da Foligno\"" ]
+    node [fontcolor=blue]
+    edge [color=aquamarine4, fontcolor=red ]
+    A [ label = "https://tmancinelli.github.io/biflow_website/person?id=2"]
+    O [ label = "https://tmancinelli.github.io/biflow_website/work?id=1"]
+    A -> O [ label = "è autrice di"]
+    A -> N [ label = "ha nome"]
+    N [ label = "\"Angela Da Foligno\"", shape=box]
 }

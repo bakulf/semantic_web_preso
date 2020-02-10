@@ -62,7 +62,7 @@ The entertainment system was belting out the Beatles' "We Can Work It Out" when 
 </section>
 
 <section id="fragments">
-  <h3>6 agosto 1991</h3 >
+  <h3>6 agosto 1991</h3>
   <p align="justify">Tim Berners-Lee pubblica la prima pagina Web, tramite il protocollo HTTP e in HTML.</p>
 
   <p class="fragment fade-up" align="justify"><small><strong>HTTP</strong> - <em>Hypertext Transfer Protocol</em>: un protocollo applicativo di trasporto dati di tipo <em>client-server</em>, privo di memoria, generico e indipendente dal tipo dei dati trasportati.</small></p>
@@ -111,7 +111,7 @@ The entertainment system was belting out the Beatles' "We Can Work It Out" when 
 <section data-background="imgs/unicode.gif" data-state="dim-background" data-background-transition="zoom">
 
   <h2>Altri elementi essenziali</h2>
-  <p align="justify"><small><strong>Unicode</strong> è un sistema di codifica di livello ch epossiamo definire di livello 0. Un sistema di codifica che assegna un numero univoco ad ogni carattere usato per la scrittura di testi, in maniera indipendente dalla lingua, dalla piattaforma informatica e dal programma utilizzato.</small></p> 
+  <p align="justify"><small><strong>Unicode</strong> è un sistema di codifica di livello che possiamo definire di livello 0. Un sistema di codifica che assegna un numero univoco ad ogni carattere usato per la scrittura di testi, in maniera indipendente dalla lingua, dalla piattaforma informatica e dal programma utilizzato.</small></p> 
   <p align="justify"><small>Creato nel 1987-89, Unicode vede la prima pubblicazione in volume nel 1991, in cui troviamo le tabelle di caratteri per la mappatura dei simboli delle principali lingue del mondo; oggi Unicode è costantemente aggiornato online e comprende circa 140.000 caratteri per la rappresentazione di 150 sistemi di scrittura, antichi e moderni</small></p>
 
 </section>
@@ -168,6 +168,7 @@ Come possono le macchine comprendere il Web?
   <img src="imgs/Semantic_web_stack.svg" alt="Semantic Web" />
 </section>
 
+<section>
 <section data-markdown>
 ## Livello 1
 ### Tecnologie Hypertext Web
@@ -180,8 +181,38 @@ Come possono le macchine comprendere il Web?
 <section data-markdown>
 ## XML
 ### Extensible Markup Language
+
+Metalinguaggio per la definizione di linguaggi di markup
 </section>
 
+<section>
+## XML - passaggio 1
+<pre><code>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;opera&gt;
+  &lt;nome&gt;Liber&lt;/nome&gt;
+  &lt;autore&gt;Angela Da Foligno&lt;/autore&gt;
+&lt;/opera&gt;
+</code></pre>
+</section>
+
+<section>
+## XML - passaggio 2
+<pre><code>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;autore&gt;
+  &lt;nome&gt;Angela Da Foligno&lt;/nome&gt;
+  &lt;opere&gt;
+    &lt;titolo&gt;Liber&lt;/titolo&gt;
+  &lt;opere&gt;
+&lt;/opera&gt;
+</code></pre>
+
+Stesso contenuto, due diverse rappresentazioni.
+</section>
+</section>
+
+<section>
 <section data-markdown>
 ## Livello 2
 ### Tecnologie Semantiche
@@ -250,6 +281,14 @@ Come possono le macchine comprendere il Web?
 
 ![RDF](dots/resources5.svg "RDF resources 5")
 </section>
+</section>
+
+<section>
+<section data-markdown>
+## Modellizzazione
+
+* Dominio Barberino:
+</section>
 
 <section data-markdown>
 ## RDF - proprietà base
@@ -261,7 +300,7 @@ Come possono le macchine comprendere il Web?
 ## RDFSchema - classi base
 
 * rdfs:Resource: tutto è una risorsa
-* rdfs:Class: ogni cosa che essere
+* rdfs:Class: ogni cosa che può essere (rdf:type)
 * rdfs:Property: proprietà delle classi
 </section>
 
@@ -274,6 +313,8 @@ Come possono le macchine comprendere il Web?
 * rdfs:seeAlso
 * rdfs:range
 * rdfs:domain
+</section>
+
 </section>
 
 <section>
