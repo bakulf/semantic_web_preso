@@ -133,7 +133,7 @@ The entertainment system was belting out the Beatles' "We Can Work It Out" when 
 <section>
   <h5>Dal Web 1.0 al 2.0</h5>
   <img src="imgs/Cloud_computing.png">
-  <p align="justify"><small>Buona parte delle piattaforme utilizzate dal Web 2.0 (pensiamo a Google Maps), di basano ance sulla diffusione di alcune architetture abilitanti, prima fra tutte quelle orientate ai servizi, le cosidette (<em>Service Oriented Architecture</em>) - SOA - o, anche, <em>Web service</em> o nuovi paradigmi come il <em>Cloud Computing</em></small></p>
+  <p align="justify"><small>Buona parte delle piattaforme utilizzate dal Web 2.0 (pensiamo a Google Maps), di basano anche sulla diffusione di alcune architetture abilitanti, prima fra tutte quelle orientate ai servizi, le cosidette (<em>Service Oriented Architecture</em>) - SOA - o, anche, <em>Web service</em> o nuovi paradigmi come il <em>Cloud Computing</em></small></p>
 </section>
 
 <section>
@@ -199,7 +199,7 @@ Metalinguaggio per la definizione di linguaggi di markup
 </section>
 
 <section>
-## XML - passaggio 1
+<h2>XML - passaggio 1</h2>
 <pre><code>
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;opera&gt;
@@ -210,7 +210,7 @@ Metalinguaggio per la definizione di linguaggi di markup
 </section>
 
 <section>
-## XML - passaggio 2
+<h2>XML - passaggio 2</h2>
 <pre><code>
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;autore&gt;
@@ -222,6 +222,12 @@ Metalinguaggio per la definizione di linguaggi di markup
 </code></pre>
 
 Stesso contenuto, due diverse rappresentazioni.
+</section>
+
+<section data-markdown>
+## XML - passaggio 3
+
+* Vocabolari XML: TEI, RSS, XHTML, SVG, XSLT...
 </section>
 </section>
 
@@ -300,13 +306,10 @@ Stesso contenuto, due diverse rappresentazioni.
 <section data-markdown>
 ## Modellizzazione
 
-* Dominio Barberino:
-</section>
-
-<section data-markdown>
-## RDF - proprietà base
-
-* rdf:type: "essere"
+* Il concetto di "essere": rdf:type
+* Classi e istanze
+* Proprietà di una classe
+* Proprietà come classi
 </section>
 
 <section data-markdown>
@@ -320,12 +323,21 @@ Stesso contenuto, due diverse rappresentazioni.
 <section data-markdown>
 ## RDFSchema - proprietà base
 
+* rdfs:subPropertyOf: "essere padre di" vs "essere genitore di"
+* rdfs:subClassOf: "gatto" vs "felino"
+* rdfs:isDefinedBy 
+* rdfs:seeAlso
+* rdfs:range: "nato a" -&gt; classe Citta
+* rdfs:domain "avere nome" -&gt; classe Persona
+</section>
+
+<section data-markdown>
+## Ontologie costruite su ontologie
+
 * rdfs:subPropertyOf
 * rdfs:subClassOf
 * rdfs:isDefinedBy
 * rdfs:seeAlso
-* rdfs:range
-* rdfs:domain
 </section>
 
 </section>
@@ -352,9 +364,9 @@ function zoom(v) {
 * Scritta in RDF e RDFS
 * Principalmente basata su:
  * FOAF
+ * Bibma
  * eFRBRoo
  * Erlangen CRM
- * Bibma
 </section>
 
 <section data-markdown>
@@ -393,30 +405,79 @@ function zoom(v) {
  &lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
           xmlns:biflow="http://tmancinelli.github.io/biflow/0.1#"&gt;
 
-  &lt;rdf:Description rdf:about="https://tmancinelli.github.io/biflow_website/person?id=2"&gt;
+  &lt;biflow:Person rdf:about="https://tmancinelli.github.io/biflow_website/person?id=2"&gt;
      &lt;biflow:author rdf:resource="https://tmancinelli.github.io/biflow_website/work?id=1" /&gt;
      &lt;biflow:has_name&gt;Angela Da Foligno&lt;/biflow:has_name&gt;
-  &lt;/rdf:Description&gt;
+  &lt;/biflow:Person&gt;
 
-  &lt;rdf:Description rdf:about="https://tmancinelli.github.io/biflow_website/work?id=1"&gt;
+  &lt;biflow:Person rdf:about="https://tmancinelli.github.io/biflow_website/work?id=1"&gt;
      &lt;biflow:has_title&gt;Liber&lt;/biflow:has_title&gt;
-  &lt;/rdf:Description&gt;
+  &lt;/biflow:Person&gt;
 
 &lt;/rdf:RDF&gt;
 </code></pre>
+</section>
+
+<section>
+<h2>RDF/Turtle</h2>
+
+<pre><code>
+@prefix biflow: &lt;http://tmancinelli.github.io/biflow/0.1#&gt; .
+
+&lt;https://tmancinelli.github.io/biflow_website/person?id=2&gt;
+  a &lt;http://tmancinelli.github.io/biflow/0.1#Person&gt; ;
+  biflow:author &lt;https://tmancinelli.github.io/biflow_website/work?id=1&gt; ;
+  biflow:has_name "Angela Da Foligno" .
+
+&lt;https://tmancinelli.github.io/biflow_website/work?id=1&gt;
+  a biflow:Person ;
+  biflow:has_title "Liber" .
+</code></pre>
+
+Esistono anche altri modi di serializare RDF: JSON-LD, N3.
 </section>
 
 <section data-markdown>
 ## OWL
 
 * Un livello sopra l'RDF definisce il rapporto semantico fra le classi e proprietà.
+* Equivalenza, cardinalità, proprietà inverse, simmetriche, ...
 * Permette deduzioni sui dati
 </section>
 
-<section data-markdown>
-## SPARQL
+<section>
+<h2>SPARQL - passaggio 1</h2>
 
-* Un linguaggio di query per interrogare grafi RDF
+Un linguaggio di query per interrogare grafi RDF
+
+<pre><code>prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+
+select distinct ?who where {
+  ?who a foaf:Person .
+} limit 100
+</code></pre>
+
+https://dbpedia.org/sparql
+</section>
+
+<section>
+<h2>SPARQL - passaggio 2</h2>
+
+Un linguaggio di query per interrogare grafi RDF
+
+<pre><code>prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+prefix dbo: &lt;http://dbpedia.org/ontology/&gt;
+prefix dbr: &lt;http://dbpedia.org/resource/&gt;
+
+select distinct ?who where {
+  ?who a foaf:Person ;
+       dbo:height ?height ;
+       dbo:birthPlace dbr:Manhattan .
+  filter(?height &gt; 1.70) .
+} limit 100
+</code></pre>
+
+https://dbpedia.org/sparql
 </section>
 
 <section>
@@ -437,11 +498,11 @@ function zoom(v) {
 ## Semantic Web nella pratica
 
 * Utile in ambienti collaborativi
-* Utile per condivisione... TODO
+* DBpedia, Wikipedia, wikidata, università, enti di ricerca...
+* Linked Data: un ridimensionamento degli obiettivi
 </section>
 
 <section>
-## Critiche al Semantic Web
 <blockquote cite="https://www-sop.inria.fr/acacia/fabien/lecture/licence_travaux_etude2002/TheSemanticWeb/">
 The entertainment system was belting out the Beatles' "We Can Work It Out" when the phone rang.
 </blockquote>
